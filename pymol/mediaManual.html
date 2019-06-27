@@ -1,0 +1,352 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>进阶教程 &mdash; PyMOL中文教程 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="theme.css" type="text/css" />
+  <link rel="stylesheet" href="pygments.css" type="text/css" />
+  <link rel="stylesheet" href="custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="高级教程" href="advanceManual.html" />
+    <link rel="prev" title="基础教程" href="basicManual.html" /> 
+
+  
+  <script src="modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PyMOL中文教程
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">初窥PyMOL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">安装指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="startManual.html">入门教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basicManual.html">基础教程</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="mediaManual.html#">进阶教程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mediaManual.html#id2">简单规则</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mediaManual.html#ffmpegmp4-gif">安装ffmpeg方便直接导出mp4 和 gif 格式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mediaManual.html#id3">制作分子对接示例动画</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mediaManual.html#id5">蛋白的口袋</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mediaManual.html#id6">蛋白构象变化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mediaManual.html#id7">构象搜索的动画</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mediaManual.html#id8">分子对接动画</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="advanceManual.html">高级教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallery.html">画廊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">更多帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="donation.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buy.html">购买</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQs.html">FAQs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PyMOL中文教程</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>进阶教程</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="intro-startmanual">
+<span id="id1"></span><h1>进阶教程<a class="headerlink" href="mediaManual.html#intro-startmanual" title="Permalink to this headline">¶</a></h1>
+<p>主要讲述如何用PyMOL 绘制精美图片的案例，以及制作动画。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">动画更加形象生动，做PPT的时候加入一些动画，更能引起听众的兴趣和注意力！</p>
+</div>
+<div class="section" id="id2">
+<h2>简单规则<a class="headerlink" href="mediaManual.html#id2" title="Permalink to this headline">¶</a></h2>
+<p>对于缺少美感的人来说，如何绘制精美图片，有如下规则和方法：
+1. 参考文献中图片，进行绘制
+2. 文献中蛋白的颜色通常设置为灰白色。
+3. 氢原子往往掩藏，尤其是非极性氢原子。</p>
+<p>如何制作动画，有如下规则：
+1. 平时注意积累动画库
+2. 模仿别人制作的动画</p>
+<div class="section" id="ffmpegmp4-gif">
+<h3>安装ffmpeg方便直接导出mp4 和 gif 格式<a class="headerlink" href="mediaManual.html#ffmpegmp4-gif" title="Permalink to this headline">¶</a></h3>
+<p>安装方法一：</p>
+<ol class="arabic simple">
+<li>step1   到 <a class="reference external" href="https://ffmpeg.org/download.html">ffmpeg官网</a> 下载ffmpeg，这里我以 <a class="reference external" href="https://ffmpeg.zeranoe.com/builds/win64/static/ffmpeg-20190604-d81913e-win64-static.zip">windows为例</a> 。</li>
+<li>step2 解压文件，将bin文件下的所有exe 程序拷贝的PATH路径下，或者将bin路径添加到PATH 环境变量中。</li>
+<li>step3 打开PyMOL,File-&gt;save move movie 选择ffmpeg 就可以保存动画。</li>
+</ol>
+<p>安装方法2：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">menpo</span> <span class="n">ffmpeg</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>制作分子对接示例动画<a class="headerlink" href="mediaManual.html#id3" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>准备材料(选定蛋白体系，配体)</li>
+<li>分子对接，保留制作动画用的配体小分子构象</li>
+<li>制作动画</li>
+</ol>
+<blockquote>
+<div><p>3.1 导入蛋白，</p>
+<p>3.2 通过命令导入小分子，并设置object的名字为lig</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">load</span> <span class="n">conf1name</span><span class="o">.</span><span class="n">mol2</span><span class="p">,</span> <span class="n">lig</span>
+<span class="n">load</span> <span class="n">conf2name</span><span class="o">.</span><span class="n">mol2</span><span class="p">,</span><span class="n">lig</span>
+<span class="o">...</span> <span class="o">...</span>
+</pre></div>
+</div>
+<p>3.3 美化，调整角度，颜色，显示模式，动画速度等</p>
+<p>3.4 mplay 播放动画</p>
+<p>3.5 导出动画 ；</p>
+<p>file-&gt;export movie as -&gt; 选择ffmpeg/gif 保存动画为gif格式 或者 选择ffmpeg/mpeg4 保存动画为mp4 格式。</p>
+<p><strong>mp4格式的文件更小</strong></p>
+</div></blockquote>
+<p>这里我以蛋白 <strong>1ki2</strong> 为例制作动画，免费下载 <a class="reference external" href="material_demo1.zip">素材</a> 。</p>
+<p>素材包含： 1. 蛋白构象；2. 小分子10个构象；3. mov.pml</p>
+<p>打开pymol,执行如下命令，就可以创建动画了</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">load</span> <span class="mi">1</span><span class="n">ki2_rec</span><span class="o">.</span><span class="n">pdb</span><span class="p">,</span><span class="n">rec</span>
+<span class="n">load</span> <span class="n">ligconf01</span><span class="o">.</span><span class="n">mol2</span><span class="p">,</span><span class="n">lig</span>
+<span class="n">load</span> <span class="n">ligconf02</span><span class="o">.</span><span class="n">mol2</span><span class="p">,</span><span class="n">lig</span>
+<span class="n">load</span> <span class="n">ligconf03</span><span class="o">.</span><span class="n">mol2</span><span class="p">,</span><span class="n">lig</span>
+<span class="n">load</span> <span class="n">ligconf04</span><span class="o">.</span><span class="n">mol2</span><span class="p">,</span><span class="n">lig</span>
+<span class="n">load</span> <span class="n">ligconf05</span><span class="o">.</span><span class="n">mol2</span><span class="p">,</span><span class="n">lig</span>
+<span class="n">load</span> <span class="n">ligconf06</span><span class="o">.</span><span class="n">mol2</span><span class="p">,</span><span class="n">lig</span>
+<span class="n">load</span> <span class="n">ligconf07</span><span class="o">.</span><span class="n">mol2</span><span class="p">,</span><span class="n">lig</span>
+<span class="n">load</span> <span class="n">ligconf08</span><span class="o">.</span><span class="n">mol2</span><span class="p">,</span><span class="n">lig</span>
+<span class="n">load</span> <span class="n">ligconf09</span><span class="o">.</span><span class="n">mol2</span><span class="p">,</span><span class="n">lig</span>
+<span class="n">load</span> <span class="n">ligconf10</span><span class="o">.</span><span class="n">mol2</span><span class="p">,</span><span class="n">lig</span>
+<span class="nb">set</span> <span class="n">movie_fps</span><span class="p">,</span> <span class="mi">3</span>
+<span class="n">mplay</span>
+</pre></div>
+</div>
+<p>或者将上述命令写入到mov.pml 文件中，双击mov.pml 就可以。</p>
+<p>我制作的动画如下</p>
+<img alt="../_images/1ki2_dock.gif" class="align-center" src="1ki2_dock.gif" />
+</div>
+<div class="section" id="id5">
+<h3>蛋白的口袋<a class="headerlink" href="mediaManual.html#id5" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id6">
+<h3>蛋白构象变化<a class="headerlink" href="mediaManual.html#id6" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id7">
+<h3>构象搜索的动画<a class="headerlink" href="mediaManual.html#id7" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id8">
+<h3>分子对接动画<a class="headerlink" href="mediaManual.html#id8" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="advanceManual.html" class="btn btn-neutral float-right" title="高级教程" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="basicManual.html" class="btn btn-neutral" title="基础教程" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, autolife
+
+    </p>
+  </div>
+
+ 
+2008-2018
+
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-130484046-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+<script async src="http://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="underscore.js"></script>
+        <script type="text/javascript" src="doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

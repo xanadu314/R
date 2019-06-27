@@ -1,0 +1,529 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>基础教程 &mdash; PyMOL中文教程 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="theme.css" type="text/css" />
+  <link rel="stylesheet" href="pygments.css" type="text/css" />
+  <link rel="stylesheet" href="custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="进阶教程" href="mediaManual.html" />
+    <link rel="prev" title="入门教程" href="startManual.html" /> 
+
+  
+  <script src="modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PyMOL中文教程
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">初窥PyMOL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">安装指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="startManual.html">入门教程</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="basicManual.html#">基础教程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#id2">命令输入窗口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#pwd">查看切换工作路径(pwd)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#fetch">下载蛋白(fetch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#load">载入蛋白（load）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#bg-color">设置背景颜色（bg_color）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#id3">开关单双键模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#ball-stick">开启球棍模型ball-stick</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#id4">开启球棍模型ball-stick</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#png">保存图片（png)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#ray">高清图片（ray）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#id5">批量修改氨基酸残基的编号</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#label">设置label的小数位数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#object">删除object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#id6">保存object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#object-disable">掩藏object-disable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#representation">掩藏representation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#id7">切换编辑模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#phi-psi">计算phi-psi角度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#show-as">蛋白的展现形式(show,as)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#dss">重新计算二级结构(dss)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#id8">选择中的关键词和缩略</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#color">着色(color)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#transparency">设置透明度(transparency)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#select">选择，残基(select)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#group">分组（group)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#object-order">排序object (order)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicManual.html#set-xx-color">设置颜色 (set xx_color)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mediaManual.html">进阶教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanceManual.html">高级教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallery.html">画廊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">更多帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="donation.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buy.html">购买</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQs.html">FAQs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PyMOL中文教程</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>基础教程</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="intro-basicmanual">
+<span id="id1"></span><h1>基础教程<a class="headerlink" href="basicManual.html#intro-basicmanual" title="Permalink to this headline">¶</a></h1>
+<p>主要讲述PyMOL常见的命令操作。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">1.本节教程是有顺序的。
+2.建议先阅读入门教程，再阅读基础教程。
+3.所有的命令都支持tab键补全，提高效率。
+4. 主要的示例以Bace-1蛋白6EQM为例，里面含有配体小分子BUH。</p>
+</div>
+<div class="section" id="id2">
+<h2>命令输入窗口<a class="headerlink" href="basicManual.html#id2" title="Permalink to this headline">¶</a></h2>
+<p>PyMOL中有2个地方可供命令输入，如下图所示，根据自己的爱好，选择一处输入命令就可以了。</p>
+<a class="reference internal image-reference" href="command2.png"><img alt="../_images/command2.png" class="align-center" src="command2.png" style="width: 60%;" /></a>
+<p>笔者倾向于使用命令框1，下面我将讲解一些常用的命令：</p>
+</div>
+<div class="section" id="pwd">
+<h2>查看切换工作路径(pwd)<a class="headerlink" href="basicManual.html#pwd" title="Permalink to this headline">¶</a></h2>
+<p>默认打开和保存文件，都是在工作路径中。因此设定合适的工作路径，可以提供效率。
+建议分子文件格式，如mol2,pdb等格式，全部关联到PyMOL软件，不要关联到DS，Maestro等软件。</p>
+<p>双击PDB文件，打开PyMOL软件，会自动调整工作路径为PDB文件所在路径。</p>
+<ol class="arabic simple">
+<li>命令 pwd; 查看工作路径；</li>
+<li>命令 cd D:/test; 切换工作路径到D盘下面的test文件夹。在执行命令前，确保D盘下面有test 文件夹。</li>
+</ol>
+<p>如图所示：</p>
+<a class="reference internal image-reference" href="pwd.png"><img alt="../_images/pwd.png" class="align-center" src="pwd.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="fetch">
+<h2>下载蛋白(fetch)<a class="headerlink" href="basicManual.html#fetch" title="Permalink to this headline">¶</a></h2>
+<p>fetch 命令可以根据PDB ID编号下载蛋白结构到工作路径，并载入到PyMOL中显示,在PyMOL中的object的名字默认是PDB ID,可通过name参数进行修改。
+从PyMOL 1.8开始，默认的格式是cif,可通过type参数修改文件的格式，也支持根据配体ligand ID的编号下载小分子。</p>
+<p>示例:</p>
+<ol class="arabic simple">
+<li>fetch 6FYZ    # 下载编号是6FYZ的蛋白，文件格式是cif。</li>
+<li>fetch EBE     #  下载编号是EBE的配体小分子，文件格式是cif。</li>
+<li>fetch 6MVD,name=”test”,type=pdb  # 下载文件格式为pdb的6MVD的蛋白，载入PyMOL中设置名字为test.</li>
+</ol>
+<p><strong>type后面的参数不是字符串，不能加引号</strong></p>
+<p>type 支持的文件格式有：</p>
+<div class="line-block">
+<div class="line">type = cif|mmtf|pdb|pdb1|2fofc|fofc|emd|cid|sid|cc</div>
+</div>
+<p>默认是从pdb网站上下载数据的，可通过设置fetch_host 修改下载源。</p>
+<p>set fetch_host,pdb
+set fetch_host,pdbe
+set fetch_host,pdbj</p>
+<p>pdb 数据库有2个镜像库，一个是欧洲的pbde,另一个是日本的pdbj。
+如果其中一个源不能使用的时候，可以尝试切换到其他源。</p>
+</div>
+<div class="section" id="load">
+<h2>载入蛋白（load）<a class="headerlink" href="basicManual.html#load" title="Permalink to this headline">¶</a></h2>
+<p>从PDB网站上下载蛋白，如 4hbk.pdb。
+工作路径中已经存在PDB文件，如4hbk.pdb。 可通过load 命令进行加载。
+命令：</p>
+<p>load 4hbk.pdb
+load filename.pdb</p>
+<p>load 和 fetch 的区别，load 是指定文件的名字，而fetch是分子的ID号。</p>
+</div>
+<div class="section" id="bg-color">
+<h2>设置背景颜色（bg_color）<a class="headerlink" href="basicManual.html#bg-color" title="Permalink to this headline">¶</a></h2>
+<p>设置背景颜色为白色：</p>
+<p>bg_color white</p>
+</div>
+<div class="section" id="id3">
+<h2>开关单双键模式<a class="headerlink" href="basicManual.html#id3" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">set valence,1 开启双键模式。</div>
+<div class="line">set valence,0 关闭双肩模式。</div>
+</div>
+<p>示例
+打开PyMOL
+fetch BUH
+bg_clor white
+set valence,1
+set valence,0</p>
+<p>效果如下：</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last figure" id="id9">
+<img alt="../_images/buh_val1.png" src="buh_val1.png" />
+<p class="caption"><span class="caption-text">Fig 1. 双键模式</span></p>
+</div>
+</td>
+<td><div class="first last figure" id="id10">
+<img alt="../_images/buh_val0.png" src="buh_val0.png" />
+<p class="caption"><span class="caption-text">Fig 2. 普通模式</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ball-stick">
+<h2>开启球棍模型ball-stick<a class="headerlink" href="basicManual.html#ball-stick" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">set stick_ball,1</div>
+<div class="line">set stick_ball_ratio,1.7</div>
+<div class="line">as stick</div>
+</div>
+<p>效果如下图所示：</p>
+<a class="reference internal image-reference" href="2ball_stick.png"><img alt="../_images/2ball_stick.png" class="align-center" src="2ball_stick.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="id4">
+<h2>开启球棍模型ball-stick<a class="headerlink" href="basicManual.html#id4" title="Permalink to this headline">¶</a></h2>
+<p>点击 Action -&gt; preset -&gt; ball and stick</p>
+<p>效果如下图所示：</p>
+<a class="reference internal image-reference" href="a_bs.png"><img alt="../_images/a_bs.png" class="align-center" src="a_bs.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="png">
+<h2>保存图片（png)<a class="headerlink" href="basicManual.html#png" title="Permalink to this headline">¶</a></h2>
+<p>png filename.png
+我建议使用该命令进行快捷保存图片</p>
+<p>下面我将以Bace-1蛋白6EQM为例，里面含有配体小分子BUH。</p>
+</div>
+<div class="section" id="ray">
+<h2>高清图片（ray）<a class="headerlink" href="basicManual.html#ray" title="Permalink to this headline">¶</a></h2>
+<p>制作高清图片，
+制作完图片后输入ray命令，然后保存图片。</p>
+</div>
+<div class="section" id="id5">
+<h2>批量修改氨基酸残基的编号<a class="headerlink" href="basicManual.html#id5" title="Permalink to this headline">¶</a></h2>
+<p>使得残基的编号增加61。
+alter (all),resi=str(int(resi)+61);
+sort;</p>
+</div>
+<div class="section" id="label">
+<h2>设置label的小数位数<a class="headerlink" href="basicManual.html#label" title="Permalink to this headline">¶</a></h2>
+<p>默认距离和角度是1位，通过下面命令可以修改，显示的位数。</p>
+<div class="line-block">
+<div class="line">set label_digits,2</div>
+<div class="line">set label_distance_digits,2</div>
+<div class="line">set label_dihedral_digits,2</div>
+<div class="line">set label_angle_digits, 2</div>
+</div>
+</div>
+<div class="section" id="object">
+<h2>删除object<a class="headerlink" href="basicManual.html#object" title="Permalink to this headline">¶</a></h2>
+<p>delete objectName</p>
+<p>delete all</p>
+</div>
+<div class="section" id="id6">
+<h2>保存object<a class="headerlink" href="basicManual.html#id6" title="Permalink to this headline">¶</a></h2>
+<p>cmd.save(filename[, selection[, state[, format]]])</p>
+<p>save file [,(selection) [,state [,format]] ]</p>
+<p>PyMOL&gt;save 01.pdb, ONLYprotein,</p>
+<p>Save: wrote “01.pdb”.</p>
+<p>PyMOL&gt;cmd.save(“0.pdb”,”ONLYprotein”)</p>
+</div>
+<div class="section" id="object-disable">
+<h2>掩藏object-disable<a class="headerlink" href="basicManual.html#object-disable" title="Permalink to this headline">¶</a></h2>
+<p>disable objectName</p>
+</div>
+<div class="section" id="representation">
+<h2>掩藏representation<a class="headerlink" href="basicManual.html#representation" title="Permalink to this headline">¶</a></h2>
+<p>hide stick
+hide cartoon</p>
+</div>
+<div class="section" id="id7">
+<h2>切换编辑模式<a class="headerlink" href="basicManual.html#id7" title="Permalink to this headline">¶</a></h2>
+<p>edit_mode</p>
+</div>
+<div class="section" id="phi-psi">
+<h2>计算phi-psi角度<a class="headerlink" href="basicManual.html#phi-psi" title="Permalink to this headline">¶</a></h2>
+<p>phi_psi objectName
+phi_psi selection</p>
+<p>phi_psi 4hbk
+phi_psi resi 100</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="show-as">
+<h2>蛋白的展现形式(show,as)<a class="headerlink" href="basicManual.html#show-as" title="Permalink to this headline">¶</a></h2>
+<p>命令如下:</p>
+<div class="line-block">
+<div class="line">as cartoon</div>
+<div class="line">show cartoon,objectname</div>
+<div class="line">as stick,all</div>
+<div class="line">as stick,objectname</div>
+<div class="line">as stick,selection express</div>
+<div class="line">as stick,resn arg</div>
+</div>
+<p>默认的object name是all。</p>
+<p>示例讲解：
+打开pymol, 依次执行下面命令。
+1. cd d:PyMOLstartedManualpse   切换到工作路径
+2. fetch 6EQM                     下载蛋白
+3.</p>
+</div>
+<div class="section" id="dss">
+<h2>重新计算二级结构(dss)<a class="headerlink" href="basicManual.html#dss" title="Permalink to this headline">¶</a></h2>
+<p>dss</p>
+</div>
+<div class="section" id="id8">
+<h2>选择中的关键词和缩略<a class="headerlink" href="basicManual.html#id8" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>organic  org. Non-polymer organic compounds (e.g. ligands, buffers)</li>
+<li>inorganic ino. Non-polymer inorganic atoms/ions</li>
+<li>solvent      sol.    Water molecules</li>
+<li>polymer      pol.    Protein or Nucleic Acid</li>
+<li>polymer.protein              Protein (New in PyMOL 2.1)</li>
+<li>polymer.nucleic              Nucleic Acid (New in PyMOL 2.1)</li>
+<li>guide                Protein CA and nucleic acid C4*/C4’</li>
+<li>hetatm               Atoms loaded from PDB HETATM records</li>
+<li>hydrogens    h.      Hydrogen atoms</li>
+<li>backbone    bb.     Polymer backbone atoms (new in PyMOL 1.6.1)</li>
+<li>sidechain   sc.     Polymer non-backbone atoms (new in PyMOL 1.6.1)</li>
+<li>metals              Metal atoms (new in PyMOL 1.6.1)</li>
+<li>donors      don.    Hydrogen bond donor atoms</li>
+<li>acceptors   acc.    Hydrogen bond acceptor atoms</li>
+</ol>
+</div>
+<div class="section" id="color">
+<h2>着色(color)<a class="headerlink" href="basicManual.html#color" title="Permalink to this headline">¶</a></h2>
+<p>color red,object name</p>
+</div>
+<div class="section" id="transparency">
+<h2>设置透明度(transparency)<a class="headerlink" href="basicManual.html#transparency" title="Permalink to this headline">¶</a></h2>
+<p>所有的命令</p>
+</div>
+<div class="section" id="select">
+<h2>选择，残基(select)<a class="headerlink" href="basicManual.html#select" title="Permalink to this headline">¶</a></h2>
+<p>选择蛋白：select protein, (byres polymer &amp; name CA)</p>
+<p>选择核酸： select nucleic, (byres polymer &amp; name P)</p>
+<p>选择RNA:  select rna, (byres polymer &amp; name O2’)</p>
+<p>选择DNA: select dna, (nucleic &amp; !rna)</p>
+</div>
+<div class="section" id="group">
+<h2>分组（group)<a class="headerlink" href="basicManual.html#group" title="Permalink to this headline">¶</a></h2>
+<p>group efHand, 1cll 1ggz 1sra</p>
+<p>group efHand, open</p>
+<p>group efHand, close</p>
+</div>
+<div class="section" id="object-order">
+<h2>排序object (order)<a class="headerlink" href="basicManual.html#object-order" title="Permalink to this headline">¶</a></h2>
+<p>order object</p>
+</div>
+<div class="section" id="set-xx-color">
+<h2>设置颜色 (set xx_color)<a class="headerlink" href="basicManual.html#set-xx-color" title="Permalink to this headline">¶</a></h2>
+<p>set</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="mediaManual.html" class="btn btn-neutral float-right" title="进阶教程" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="startManual.html" class="btn btn-neutral" title="入门教程" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, autolife
+
+    </p>
+  </div>
+
+ 
+2008-2018
+
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-130484046-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+<script async src="http://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="underscore.js"></script>
+        <script type="text/javascript" src="doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

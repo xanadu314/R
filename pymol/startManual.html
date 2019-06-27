@@ -1,0 +1,783 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>入门教程 &mdash; PyMOL中文教程 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="theme.css" type="text/css" />
+  <link rel="stylesheet" href="pygments.css" type="text/css" />
+  <link rel="stylesheet" href="custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="基础教程" href="basicManual.html" />
+    <link rel="prev" title="安装指南" href="install.html" /> 
+
+  
+  <script src="modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PyMOL中文教程
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">初窥PyMOL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">安装指南</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="startManual.html#">入门教程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#pymol">PyMOL软件界面介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id2">PyMOL内置的超强可视化示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id3">设置和查看工作路径</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id4">下载蛋白</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#show">蛋白的展现形式(show)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id5">蛋白对象的简单平移、旋转、缩放</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#action">蛋白对象的action操作</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id6">查看小分子和蛋白的氢键作用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#hide">蛋白对象的Hide操作</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#sequence">查看该结构的序列(Sequence)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id7">选择蛋白的特定残基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id8">蛋白对象的着色操作</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id9">设置背景颜色</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#label">对象的Label操作</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id10">测量距离</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id11">测量角度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id12">测量二面角</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id13">测量环的距离</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id14">突变氨基酸残基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id15">设置透明度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id16">选择模式：</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startManual.html#id17">保存或者导出结果</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="basicManual.html">基础教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mediaManual.html">进阶教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanceManual.html">高级教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallery.html">画廊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">更多帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="donation.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buy.html">购买</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQs.html">FAQs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PyMOL中文教程</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>入门教程</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="intro-startmanual">
+<span id="id1"></span><h1>入门教程<a class="headerlink" href="startManual.html#intro-startmanual" title="Permalink to this headline">¶</a></h1>
+<p>主要讲述PyMOL中常见的图形界面（鼠标）操作</p>
+<div class="section" id="pymol">
+<h2>PyMOL软件界面介绍<a class="headerlink" href="startManual.html#pymol" title="Permalink to this headline">¶</a></h2>
+<p>PyMOL 软件界面如下图所示，主要由2部分组成。第一部分是菜单窗口和第二部分是显示窗口。
+PyMOL2 和PyMOL1一个明显区别:
+在PyMOL2中，这2部分默认是一个整体，在PyMOL1中这2部分是分开的。
+在Display-&gt;Toggle Floating 可以拆分这2个窗口，快捷键是Ctrl+E,
+刚开始PyMOL的界面主要是通过tkinter实现的，在PyMOL2中逐渐采用PyQT技术实现。
+和PyMOL1 相比，PyMOL2 表现能力更强，功能更多，本教程以PyMOL2为例进行讲解，大部分
+内容也适用于PyMOL1.</p>
+<p>窗口1：整合了PyMOL的各个功能，主要包含如下部分</p>
+<p>1.1 菜单窗口
+1.2 操作记录显示窗口
+1.3 命令输入窗口
+1.4 常用命令集成面板</p>
+<p>窗口2：分子操作和显示窗口，主要包括如下部分：</p>
+<p>2.1 可视化窗口
+2.2 命令输入窗口
+2.3 分子对象列表窗口
+2.4 模式窗口</p>
+<a class="reference internal image-reference" href="pymol_windows.jpg"><img alt="../_images/pymol_windows.jpg" class="align-center" src="pymol_windows.jpg" style="width: 600px;" /></a>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">本节教程是有顺序的。</p>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>PyMOL内置的超强可视化示例<a class="headerlink" href="startManual.html#id2" title="Permalink to this headline">¶</a></h2>
+<p>打开PyMOL,点击1.1菜单窗口的Wizard菜单，然后点击Demo-&gt;Representations
+然后在2.3 对象窗口 和 2.4模式窗口之间会出现各种示例：</p>
+<ol class="arabic simple">
+<li>Representations</li>
+<li>Cartoon Ribbons</li>
+<li>Roving Detail</li>
+<li>Roving Density</li>
+<li>Transparency</li>
+<li>Ray Tracing</li>
+<li>Sculpting</li>
+<li>Scripted Animation</li>
+<li>Electrostatics</li>
+<li>CGOs</li>
+<li>Molscript/R3D Input</li>
+<li>End Demonstration 关闭示例</li>
+</ol>
+<p>从中我选择了几个示例图片展示下：</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last figure" id="id18">
+<img alt="../_images/1repren.png" src="1repren.png" />
+<p class="caption"><span class="caption-text">Fig 1. Representations</span></p>
+</div>
+</td>
+<td><div class="first last figure" id="id19">
+<img alt="../_images/5transparency.png" src="5transparency.png" />
+<p class="caption"><span class="caption-text">Fig 2. Transparency</span></p>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="first last figure" id="id20">
+<img alt="../_images/9ele.png" src="9ele.png" />
+<p class="caption"><span class="caption-text">Fig 3. Electrostatics</span></p>
+</div>
+</td>
+<td><div class="first last figure" id="id21">
+<img alt="../_images/11R3D.PNG.png" src="11R3D.PNG.png" />
+<p class="caption"><span class="caption-text">Fig 4. R3D</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>从这些示例中，我们可以感受到PyMOL的强大表现能力。</p>
+</div>
+<div class="section" id="id3">
+<h2>设置和查看工作路径<a class="headerlink" href="startManual.html#id3" title="Permalink to this headline">¶</a></h2>
+<p>点击1.1菜单窗口 File-&gt;Working Directory-&gt;Change 可以查看现在的工作目录在哪里，也可以设置新的路径作为工作目录。</p>
+<p>工作目录的作用：默认文件的打开和保存都是从该文件开始。下载文件的保存位置也是在工作目录。</p>
+<p>工作目录设置习惯</p>
+<dl class="docutils">
+<dt>建议： 1. 不同项目设置不同的工作目录</dt>
+<dd><ol class="first last arabic simple" start="2">
+<li>设置一个默认工作目录</li>
+<li>不要把工作目录设置在软件安装目录</li>
+</ol>
+</dd>
+</dl>
+<ul class="simple">
+<li>双击PDB文件打开PyMOL,会自动切换工作目录到该PDB文件所在目录。</li>
+<li>从软件安装处打开PyMOL, 则工作目录为软件安装目录</li>
+</ul>
+<p>这里我设置工作目录为 D:\PyMOLstartedManual</p>
+</div>
+<div class="section" id="id4">
+<h2>下载蛋白<a class="headerlink" href="startManual.html#id4" title="Permalink to this headline">¶</a></h2>
+<p>从PDB网站上下载蛋白，如 4hbk.pdb, 也可以直接通过PyMOL 下载蛋白，点击菜单栏中的 File-&gt;Get PDB,如下图图所示, 在PDB ID 对应的框中填入PDB的编号就可以了，不要包含后缀.pdb 。</p>
+<a class="reference internal image-reference" href="Fig5getpdb.png"><img alt="../_images/Fig5getpdb.png" class="align-center" src="Fig5getpdb.png" style="width: 60%;" /></a>
+<p>点击Download，你会发现PyMOL会自动加载该蛋白，在工作路径 D:\PyMOLstartedManual 下面出现 4hbk.cif 文件，随着PDB解析的结构越来越大，PDB格式文件的局限性就暴露出来，不能超过9999个原子，因此正在逐渐用cif 格式取代pdb 格式。</p>
+</div>
+<div class="section" id="show">
+<h2>蛋白的展现形式(show)<a class="headerlink" href="startManual.html#show" title="Permalink to this headline">¶</a></h2>
+<p>在2.3对象列表窗口中，我们可以看到现在有2个object 名字，</p>
+<ul class="simple">
+<li>1个是all, all 不是真实的object,它代表了所有的object</li>
+<li>1个是4hbk, 4hbk 就是我们刚刚载入的蛋白</li>
+</ul>
+<p>每个object 都有对应的A S H L C操作,如下图所示：</p>
+<a class="reference internal image-reference" href="Fig6ASHLC.png"><img alt="../_images/Fig6ASHLC.png" class="align-center" src="Fig6ASHLC.png" style="width: 60%;" /></a>
+<ul class="simple">
+<li>Action  主要包含了对object的常用操作的集合，如 复制、删除object,对object加氢，展示Object等，更多详情参见蛋白对象的Action操作。</li>
+<li>Show 将object 渲染成cartoon 、line、stick lines sphere surface mesh dots ribbon 等模式</li>
+<li>Hide 根据object的状态或者描述进行相应的掩藏</li>
+<li>Label 显示object中残基 原子等名称或者属性</li>
+<li>Color 对Object 进行着色</li>
+</ul>
+<p>下面对Show 着重讲解：
+show 有2类操作方法：</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>show as 分别点击S-&gt;as-&gt;cartoon 和S-&gt;as-&gt;stick,</dt>
+<dd>我们可以观察到AS模式是把原有的渲染模式抹除后再重新渲染，经过上述操作后仅仅显示stick形式</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>show  点击S-&gt;as-&gt;cartoon 再点击S-&gt;stick;</dt>
+<dd>我们可以观察到SHOW方法，是保留原有的渲染，再添加新的渲染。</dd>
+</dl>
+</li>
+</ul>
+<p>我们先对4hbk object点击 S-&gt;as-&gt;cartoon,然后点击S-&gt;as-&gt;stick,效果如图Fig5</p>
+<p>我们先对4hbk object点击 S-&gt;as-&gt;cartoon,然后点击S-&gt;stick,效果如图Fig6</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last figure" id="id22">
+<img alt="../_images/Fig5asStick.png" src="Fig5asStick.png" />
+<p class="caption"><span class="caption-text">Fig 5.  as stick</span></p>
+</div>
+</td>
+<td><div class="first last figure" id="id23">
+<img alt="../_images/Fig6Stick.png" src="Fig6Stick.png" />
+<p class="caption"><span class="caption-text">Fig 6. stick</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>大家可以下载demo1的示例蛋白文件 demo1_pp.pdb，点此 <a class="reference download internal" href="demo1_pp.pdb" download=""><code class="xref download docutils literal notranslate"><span class="pre">pdb</span></code></a> 下载。</p>
+<p>然后在PyMOL中点击File -&gt; Open-&gt; demo1_pp.pdb 打开该文件。</p>
+<ol class="arabic simple">
+<li>点击 S-&gt;as-&gt;lines</li>
+<li>点击 S-&gt;as-&gt;sticks</li>
+<li>点击 S-&gt;as-&gt;spheres</li>
+<li>点击 S-&gt;as-&gt;surface</li>
+<li>点击 S-&gt;as-&gt;mesh</li>
+<li>点击 S-&gt;as-&gt;dots</li>
+<li>点击 S-&gt;as-&gt;ribbon</li>
+<li>点击 S-&gt;as-&gt;cartoon</li>
+</ol>
+<p>观察该分子对象的不同形态,如图1所示。</p>
+</div>
+<div class="section" id="id5">
+<h2>蛋白对象的简单平移、旋转、缩放<a class="headerlink" href="startManual.html#id5" title="Permalink to this headline">¶</a></h2>
+<p><strong>首先将鼠标移动到2.1可视化窗口</strong></p>
+<ul class="simple">
+<li>平移，按住鼠标中键不放，然后上下左右移动，进行体会，蛋白会随着鼠标而移动</li>
+<li>旋转，按住鼠标左键不放，然后上下左右移动鼠标，蛋白会进行旋转</li>
+<li>缩放，按住鼠标右键不放，然后上下移动，蛋白会进行缩放</li>
+<li>切割  滚动鼠标中键， 建议将蛋白渲染成surface模式，然后滚动鼠标中键</li>
+</ul>
+<p>当软件不能正常使用上述操作，可以点击</p>
+<ul class="simple">
+<li>File-&gt;Reinitialize-&gt;Original Settings (推荐)</li>
+<li>File-&gt;Reinitialize-&gt;Everything
+注意的是该操作会删除当前所有的Object,</li>
+</ul>
+</div>
+<div class="section" id="action">
+<h2>蛋白对象的action操作<a class="headerlink" href="startManual.html#action" title="Permalink to this headline">¶</a></h2>
+<p>对于4HBK体系里面没有小分子，一些相互作用操作不方便演示,我会在在后面进行更详细的讲解。</p>
+<p>第一部分： 常用显示操作</p>
+<ul class="simple">
+<li>点击 A-&gt;preset-&gt;simple  显示蛋白的简单形式</li>
+<li>点击 A-&gt;preset-&gt;ball and stick  显示球棍模型</li>
+</ul>
+<p>效果如下图所示：</p>
+<a class="reference internal image-reference" href="a_bs.png"><img alt="../_images/a_bs.png" class="align-center" src="a_bs.png" style="width: 60%;" /></a>
+<ul class="simple">
+<li>点击 A-&gt;preset-&gt;b-factor putty   基于bfactor数值显示蛋白的柔性</li>
+<li>点击 A-&gt;preset-&gt;publication  高质量出版标准</li>
+</ul>
+<p>第二部分 对象的操作</p>
+<ul class="simple">
+<li>删除水分子 A-&gt;remove waters</li>
+</ul>
+<div class="line-block">
+<div class="line">该操作属于红色警告操作，不可逆操作。删除水分子后，无法通过Ctrl-Z进行撤销。</div>
+</div>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>增加删除氢原子</dt>
+<dd>在line和stick 模式下面可以看到H原子，cartoon模式下面看不到氢原子
+因此在line或者stick模式下，执行下述操作。</dd>
+</dl>
+</li>
+<li>A-&gt;Hydrogens-&gt;remove 删除所有氢原子</li>
+<li>A-&gt;Hydrogens-&gt;add    增加所有氢原子</li>
+<li>A-&gt;Hydrogens-&gt;remove non polar 删除所有非极性氢原子，我们可以看到C上的氢原子全部被删除</li>
+<li>A-&gt;Hydrogens-&gt;remove 再次删除所有氢原子</li>
+<li>A-&gt;Hydrogens-&gt;add polar  增加极性氢原子</li>
+</ul>
+<p>第三部分 对象的复制 删除 重命名</p>
+<ul class="simple">
+<li>复制 A-&gt;Copy to object-&gt;new</li>
+</ul>
+<div class="line-block">
+<div class="line">我们会得到一个名为new的object,为了和4hbk object 进行区分。</div>
+<div class="line">对4hbk 的obect 点击C-&gt;cyan 和S-&gt;AS -&gt;cartoon</div>
+<div class="line">对obj01 点击 C-&gt;green 和S-&gt;as-&gt;stick</div>
+</div>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>重命名 obj01-&gt; 4hbk_02</dt>
+<dd>对obj01 点击A-&gt;rename object</dd>
+</dl>
+</li>
+<li>删除 A-&gt;delete object</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>查看小分子和蛋白的氢键作用<a class="headerlink" href="startManual.html#id6" title="Permalink to this headline">¶</a></h2>
+<p>由于4hbk 蛋白中没有小分子，这里我以 PDB id: 为例演示。
+点击 A-&gt;preset-&gt;ligand sites
+效果如图所示，其中黄色的虚线就是氢键。</p>
+<p>对标注的氢键，查看距离和角度，进一步确定氢键的合理性和强度。</p>
+<p>查看小分子和蛋白的相互作用，推荐软件 schrodinger中ligand interaction。
+制作相互作用的二维图，根据提示，然后再在pymol确认并绘制这些相互作用。</p>
+</div>
+<div class="section" id="hide">
+<h2>蛋白对象的Hide操作<a class="headerlink" href="startManual.html#hide" title="Permalink to this headline">¶</a></h2>
+<p>和remove  delete 操作相比，hide操作更加温和，
+把不需要的东西暂时掩藏起来，通过Show 可以重现显示出来。
+我们先上述方法，构建4hbk 和4hbk_02 两个object，
+这一次把4hbk 设置成cyan 颜色的cartoon, 4hbk_02设置成green颜色的ribbon，如图所示。
+如果要掩藏4hbk_02,有2种方法
+- 对4hbk_02 点击H-&gt;ribbOn
+- 直接点击4hbk_02的名字</p>
+<a class="reference internal image-reference" href="HIDE.png"><img alt="../_images/HIDE.png" class="align-center" src="HIDE.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="sequence">
+<h2>查看该结构的序列(Sequence)<a class="headerlink" href="startManual.html#sequence" title="Permalink to this headline">¶</a></h2>
+<p>点击左下角的S，即可显示蛋白的序列信息，如图所示,再点击一次S，则掩藏序列信息。
+S是单词Sequece的缩写。</p>
+<a class="reference internal image-reference" href="seq.png"><img alt="../_images/seq.png" class="align-center" src="seq.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="id7">
+<h2>选择蛋白的特定残基<a class="headerlink" href="startManual.html#id7" title="Permalink to this headline">¶</a></h2>
+<p>我们通过软件 <a class="reference external" href="https://www.d3pharma.com/D3Pocket/page_upload.php">D3Pockets</a> 可以确定4hbk中口袋中氨基酸残基的组成：</p>
+<div class="line-block">
+<div class="line">ILE15-TRP20, TYR39, ASP43-ALA45, VAL47, TYR48, LYS77, TRP79, ASN80,</div>
+<div class="line">LEU108, HIS110, TRP111, LEU115, PHE122, LEU130, SER159, ASN160, GLN181,</div>
+<div class="line">GLU183, HIS185, 185     207     208     209</div>
+<div class="line">210     211     222     223     240     241     243     244</div>
+<div class="line">255     256     257     258     263     264     266     267</div>
+<div class="line">270     292     293     294     295     298     306</div>
+</div>
+<div class="line-block">
+<div class="line">我们点击Sequence,并将Selecting模式切换为residues,然后基于残基编号进行选择。</div>
+<div class="line">把上述残基选中以后会临时保存在sele的object中，我们把它复制到obj01的Object中，</div>
+<div class="line">并重名为Pocket,然后对Pocket的Object，显示其表面，结果如图所示。</div>
+</div>
+<a class="reference internal image-reference" href="PKTsurface.png"><img alt="../_images/PKTsurface.png" class="align-center" src="PKTsurface.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="id8">
+<h2>蛋白对象的着色操作<a class="headerlink" href="startManual.html#id8" title="Permalink to this headline">¶</a></h2>
+<p>pymol中内置了多种不同的着色方案,如图所示：</p>
+<ul>
+<li><p class="first">按照原子类型着色</p>
+<p>点击object上的 C按钮 -&gt; by element</p>
+</li>
+<li><p class="first">按照二级结构着色</p>
+</li>
+<li><p class="first">按照b-factor着色</p>
+</li>
+<li><p class="first">按照整体着色</p>
+</li>
+</ul>
+<a class="reference internal image-reference" href="color.png"><img alt="../_images/color.png" class="align-center" src="color.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="id9">
+<h2>设置背景颜色<a class="headerlink" href="startManual.html#id9" title="Permalink to this headline">¶</a></h2>
+<p>背景颜色默认是黑色的，发表文章的时候背景颜色通常设置为白色。
+| 点击菜单栏中的 Display-&gt;background-&gt;white
+如图所示：</p>
+<a class="reference internal image-reference" href="bg_color.png"><img alt="../_images/bg_color.png" class="align-center" src="bg_color.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="label">
+<h2>对象的Label操作<a class="headerlink" href="startManual.html#label" title="Permalink to this headline">¶</a></h2>
+<p>选择需要Label的对象
+| 然后点击对象上的L按钮，根据需要，可以标记残基的名字，原子的名字，范德华半径、元素的名字等。</p>
+<div class="line-block">
+<div class="line">1. L-&gt;residue 在α碳原子上标记其残基名字和编号 （常用）</div>
+<div class="line">2. L-&gt;residue name  在所有原子上标记残基名字 （不常用）</div>
+<div class="line">3. L-&gt;clear  删除该对象上所有的Label</div>
+<div class="line">4. L-&gt;element symbol 显示对象上所有原子的元素名字</div>
+<div class="line">5. L-&gt;vdw radius  产看原子的范德华半径</div>
+</div>
+<p>对于蛋白醛糖还原酶（PDB ID: 4HBK）,我们在UniProt 数据库中查询得到，其口袋中的重要残基有：
+TYR48、LYS77 和 HIS110。</p>
+<p>我们对这三个残基展示其为stick模式,并掩藏主链，并通过label按钮标注其氨基酸残基的名字。
+移动Label，使其更加清晰可见。具体操作流程如下:</p>
+<div class="line-block">
+<div class="line">1. 载入4hbk 蛋白</div>
+<div class="line">2. 在4hbk object 上点击 S-&gt;as cartoon</div>
+<div class="line">3. 点击右下角的sequence开关按钮，选择 TYR48 LYS77 HIS110 三个残基，得到sele 临时object</div>
+<div class="line">4. 在sele object 上点击 S-&gt;stick, H-&gt;main chain</div>
+<div class="line">5. 在sele object 上点击 L-&gt;residue</div>
+<div class="line">6. 设置背景为白色，点击菜单栏中 Display-&gt;background-&gt;white</div>
+<div class="line">7. 点击Mouse Mode 切换为 editing 模式</div>
+<div class="line">8. 按住ctrl键不放，然后将鼠标移动到残基标签上方，并按下鼠标左键不放，然后移动鼠标，就可以调整标签的位置。</div>
+<div class="line">9. 调整结束后，点击Mouse Mode 切换为 view 模式</div>
+</div>
+<p>效果如下图所示：</p>
+<a class="reference internal image-reference" href="label.png"><img alt="../_images/label.png" class="align-center" src="label.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="id10">
+<h2>测量距离<a class="headerlink" href="startManual.html#id10" title="Permalink to this headline">¶</a></h2>
+<p>点击菜单栏中的Wizard-&gt;Measurement 就可以进行距离测量。然后分别选择两个2个原子就可以显示这2个原子的距离。</p>
+<p>比如我们想测定TYR48中侧链上的O原子到Lys77侧链N原子的距离，如下操作即可：</p>
+<div class="line-block">
+<div class="line">1. 点击Wizard-&gt;Measurement；打开了Measurement 面板，位于object list面板下方；</div>
+<div class="line">2. 鼠标点击TYR48侧链上的O原子 和 LYS77 侧链上面的N原子；</div>
+<div class="line">3. 如要测定其他2个原子的距离，鼠标继续点击选择2个原子就可以了；</div>
+<div class="line">4. 测定完成后，点击Measurement 面板中的done 就可以了。</div>
+</div>
+<p>效果如图所示：</p>
+<a class="reference internal image-reference" href="mea_distance.png"><img alt="../_images/mea_distance.png" class="align-center" src="mea_distance.png" style="width: 60%;" /></a>
+<p>作业：</p>
+<p>1. 测定TYR48的α碳原子和LYS77的α碳原子的距离？
+答案是11.6A</p>
+<p>默认测定的距离是保留1位小数，如果想要显示2位小数，可点击菜单栏中的Setting-&gt;Edit All,
+然后搜索label_digits，找到该索引，并把后面的数值设置为2就可以了。如图所示：</p>
+<a class="reference internal image-reference" href="label_digits.png"><img alt="../_images/label_digits.png" class="align-center" src="label_digits.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="id11">
+<h2>测量角度<a class="headerlink" href="startManual.html#id11" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">点击菜单栏中的Wizard-&gt;Measurement，打开measurement 面板，默认是测量距离的模式。</div>
+<div class="line">点击Measuremnet 面板中Distances按钮，将Measurement Mode从Distances 模式切换到Angles模式。</div>
+<div class="line">然后依次选择3个原子，如ABC,则可以测出角度&lt;ABC的角度。</div>
+</div>
+<p>比如我们想测定Lys77侧链CE、NZ原子和的TYR48中侧链上的O原子的角度，如下操作即可：</p>
+<div class="line-block">
+<div class="line">1. 点击Wizard-&gt;Measurement；打开了Measurement 面板，位于object list面板下方；</div>
+<div class="line">2. 点击Measuremnet 面板中Distances按钮,切换到Angles按钮；</div>
+<div class="line">2. 鼠标依次点击 LYS77 侧链上面的CE原子、N原子和TYR48侧链上的O原子，完成测定</div>
+<div class="line">4. 测定完成后，点击Measurement 面板中的done 就可以了。</div>
+<div class="line">5. 调整Label的位置，保存图片。</div>
+</div>
+<p>效果如图所示：</p>
+<a class="reference internal image-reference" href="mea_angle.png"><img alt="../_images/mea_angle.png" class="align-center" src="mea_angle.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="id12">
+<h2>测量二面角<a class="headerlink" href="startManual.html#id12" title="Permalink to this headline">¶</a></h2>
+<p>同测量距离和角度的操作，只需要将测量模式切换为Dihedrals。</p>
+</div>
+<div class="section" id="id13">
+<h2>测量环的距离<a class="headerlink" href="startManual.html#id13" title="Permalink to this headline">¶</a></h2>
+<p>同测量距离和角度的操作，只需要将测量模式切换为Dihedrals。</p>
+<div class="line-block">
+<div class="line">该模式是用来测量两个环中心的距离，所以选择的2个原子必须位于环上，如苯环、环己烷、N杂环等。否则将按照Distances模式进行处理。</div>
+</div>
+</div>
+<div class="section" id="id14">
+<h2>突变氨基酸残基<a class="headerlink" href="startManual.html#id14" title="Permalink to this headline">¶</a></h2>
+<p>如把4hbk 中的arg-40 突变成 lys-40,</p>
+<ol class="arabic simple">
+<li>在菜单中点击wizard-&gt;mutagenesis-&gt;protein</li>
+</ol>
+<a class="reference internal image-reference" href="mutate.png"><img alt="../_images/mutate.png" class="align-center" src="mutate.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="id15">
+<h2>设置透明度<a class="headerlink" href="startManual.html#id15" title="Permalink to this headline">¶</a></h2>
+<p>鼠标操作只能基于显示模式进行设置，如：cartoon surface sphere stick等</p>
+<div class="line-block">
+<div class="line">1. 将cartoon 设置成透明的，透明度50%；点击菜单栏中的Setting-&gt;Transparency-&gt;cartoon-&gt;50%;</div>
+<div class="line">2. 将Surface 设置成透明的，透明度50%；点击菜单栏中的Setting-&gt;Transparency-&gt;surface-&gt;50%;</div>
+<div class="line">3. 将Stick 设置成透明的，透明度50%；点击菜单栏中的Setting-&gt;Transparency-&gt;stick-&gt;50%;</div>
+<div class="line">4. 将sphere 设置成透明的，透明度50%；点击菜单栏中的Setting-&gt;Transparency-&gt;sphere-&gt;50%;</div>
+</div>
+<p>除了可以设置透明度外，还可以设置透明的方式，有如下几种透明模式：</p>
+<div class="line-block">
+<div class="line">1. Uni-layer; 点击菜单栏中的Setting-&gt;Transparency-&gt;Uni-layer</div>
+<div class="line">2. Multi-Layer; 点击菜单栏中的Setting-&gt;Transparency-&gt;Multi-Layer</div>
+<div class="line">3. Multi-Layer(real time oit); 点击菜单栏中的Setting-&gt;Transparency-&gt;Multi-layer(real time oit)</div>
+<div class="line">4. Fast-ugly; 点击菜单栏中的Setting-&gt;Transparency-&gt;Fast-ugly</div>
+</div>
+<p>在Label操作中，我们将整个蛋白展示为cartoon,并将HIS  等3个残基展示为stick模式;
+这时候我们设置cartoon为透明50%，用4种不同的透明模式渲染，效果如下：</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last figure" id="id24">
+<img alt="../_images/tran1.png" src="tran1.png" />
+<p class="caption"><span class="caption-text">Fig 1. Uni-layer 透明效果</span></p>
+</div>
+</td>
+<td><div class="first last figure" id="id25">
+<img alt="../_images/tran2.png" src="tran2.png" />
+<p class="caption"><span class="caption-text">Fig 2. Multi-Layer 透明效果</span></p>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="first last figure" id="id26">
+<img alt="../_images/tran3.png" src="tran3.png" />
+<p class="caption"><span class="caption-text">Fig 3. Multi-Layer(real time oit)</span></p>
+</div>
+</td>
+<td><div class="first last figure" id="id27">
+<img alt="../_images/tran4.png" src="tran4.png" />
+<p class="caption"><span class="caption-text">Fig 4. Fast-ugly</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id16">
+<h2>选择模式：<a class="headerlink" href="startManual.html#id16" title="Permalink to this headline">¶</a></h2>
+<p>根据不同的需求，切换到不同的选择模式，快速选择自己想要的原子：</p>
+<div class="line-block">
+<div class="line">1. Residues 残基选择模式</div>
+<div class="line">2. Atoms 原子选择模式</div>
+<div class="line">3. Molecules 分子选择模式</div>
+<div class="line">4. chain 链选择模式</div>
+<div class="line">5. Objects 模式</div>
+<div class="line">6. C-alphas α碳原子模式</div>
+<div class="line">7. Segments 片段模式</div>
+</div>
+<p>我们先将蛋白Show-&gt;as wire;然后把MET-1第一个氨基酸残基show stick;如图所示，</p>
+<a class="reference internal image-reference" href="select.png"><img alt="../_images/select.png" class="align-center" src="select.png" style="width: 60%;" /></a>
+<p>我们切换到不同的模式，选择甲硫氨酸上的硫原子。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last figure" id="id28">
+<img alt="../_images/atom.png" src="atom.png" />
+<p class="caption"><span class="caption-text">Fig 1. atoms模式下点击硫原子的效果</span></p>
+</div>
+</td>
+<td><div class="first last figure" id="id29">
+<img alt="../_images/res_select.png" src="res_select.png" />
+<p class="caption"><span class="caption-text">Fig 2. res模式下点击硫原子</span></p>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="first last figure" id="id30">
+<img alt="../_images/chain_select.png" src="chain_select.png" />
+<p class="caption"><span class="caption-text">Fig 3. chain模式下点击硫原子</span></p>
+</div>
+</td>
+<td><div class="first last figure" id="id31">
+<img alt="../_images/mol_select.png" src="mol_select.png" />
+<p class="caption"><span class="caption-text">Fig 4. mol模式下点击硫原子</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>从上图我们也可以看到，不同模式的区别。这里我简单解释下:</p>
+<div class="line-block">
+<div class="line">res模式：我们点击的是硫原子，硫原子所在的res是MET-1,因此选中的是MET-1</div>
+<div class="line">chain模式：我们点击的是硫原子，硫原子所在的chain A,因此选中的是所有属于chain A的原子。</div>
+<div class="line">mol 模式： 我们点击的是硫原子，pymol 中是通过共价键来区分是否属于一个分子，4hbk 蛋白中间缺失了部分残基，整个蛋白分成了2部分。这里选择的是硫原子所在的那一部分。</div>
+</div>
+</div>
+<div class="section" id="id17">
+<h2>保存或者导出结果<a class="headerlink" href="startManual.html#id17" title="Permalink to this headline">¶</a></h2>
+<p>PyMOL 和 PhotoShop 有点类似，PyMOL中的Object 类似于 PhotoShop中的图层。</p>
+<ol class="arabic simple">
+<li>PyMOL 可以将会话保存为pse文件，File-&gt;Save Session；pse 文件类似于PS中的psd文件，方便修改调整。</li>
+<li>PyMOL 可以将object 导出为结构文件，File-&gt;export molecule，然后从selection的下拉框中选择需要导出的object,
+all 代表所有的object;
+enable 代表的可见的object;</li>
+<li>保存图片，File-&gt;export image as-&gt;png; 在新版本的，可以使用右上角的Ray/Trace按钮，设置图片大小 分辨率，进行保存图片。</li>
+</ol>
+<p>4. 保存动画，File-&gt;export movie as-&gt;mpeg; PyMOL仅仅内置了 mpeg_encode 编码视频方式，默认只能保存mpg格式的动画。
+可自行下载ffmpeg,从而可以保存为多种格式，如gif,mov,mpg等</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="basicManual.html" class="btn btn-neutral float-right" title="基础教程" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install.html" class="btn btn-neutral" title="安装指南" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, autolife
+
+    </p>
+  </div>
+
+ 
+2008-2018
+
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-130484046-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+<script async src="http://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="underscore.js"></script>
+        <script type="text/javascript" src="doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>FAQs &mdash; PyMOL中文教程 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="theme.css" type="text/css" />
+  <link rel="stylesheet" href="pygments.css" type="text/css" />
+  <link rel="stylesheet" href="custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="购买" href="buy.html" /> 
+
+  
+  <script src="modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PyMOL中文教程
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">初窥PyMOL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">安装指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="startManual.html">入门教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basicManual.html">基础教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mediaManual.html">进阶教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanceManual.html">高级教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallery.html">画廊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">更多帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="donation.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buy.html">购买</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="FAQs.html#">FAQs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PyMOL中文教程</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>FAQs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="faqs">
+<h1>FAQs<a class="headerlink" href="FAQs.html#faqs" title="Permalink to this headline">¶</a></h1>
+<p>Q1. 老师您好 我用pymol显示相互作用的时候 show sticks  然后蛋白的白塔折叠就断了  咋样显示让蛋白更好看一些不断裂呢？</p>
+<img alt="../_images/break.png" class="align-center" src="break.png" />
+<p>A1. 参见 入门教程中的 show 和 show as 的区别。</p>
+<p>Q2. pymol里面打开结构很暗,重装软件也没有用，怎么解决？</p>
+<img alt="../_images/darkColor.png" class="align-center" src="darkColor.png" />
+<p>A2. OpenGL模块不兼容,在setting中rendering中设置关闭opengl,或者重新装opengl驱动。</p>
+<p>Q3. 请问pymol如何消除自动补全的虚线啊?</p>
+<img alt="../_images/1t48_dash.png" class="align-center" src="1t48_dash.png" />
+<p>A3. 氨基酸缺失或者一段seq离开了自己原来的位置，pymol 会在它认为链接的地方加虚线。如果想要掩藏虚线，将其拆分成2个独立的object就可以了。</p>
+<p>Q4. ray 渲染后内部非透明物体消失？</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last figure" id="id1">
+<a class="reference internal image-reference" href="beforeR.jpg"><img alt="../_images/beforeR.jpg" src="beforeR.jpg" style="width: 70%;" /></a>
+<p class="caption"><span class="caption-text">Fig 1. befor ray</span></p>
+</div>
+</td>
+<td><div class="first last figure" id="id2">
+<a class="reference internal image-reference" href="afterR.jpg"><img alt="../_images/afterR.jpg" src="afterR.jpg" style="width: 70%;" /></a>
+<p class="caption"><span class="caption-text">Fig 2. after ray</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>可通过间接的方法实现ray后内部非透明物体可见，保留3张图片，然后1.openPOCKET; 2. closePocket; 3.proteintCartoon.
+然后把3张图图片导入到PhotoShop中，从上到下一次是123的顺序就可以了。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last figure" id="id3">
+<a class="reference internal image-reference" href="close_pocket.png"><img alt="../_images/close_pocket.png" src="close_pocket.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Fig 1. openPocket</span></p>
+</div>
+</td>
+<td><div class="first last figure" id="id4">
+<a class="reference internal image-reference" href="open_pocket.png"><img alt="../_images/open_pocket.png" src="open_pocket.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Fig 2. closePocket</span></p>
+</div>
+</td>
+<td><div class="first last figure" id="id5">
+<a class="reference internal image-reference" href="proteinC.png"><img alt="../_images/proteinC.png" src="proteinC.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Fig 3. proteinCartoon</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="ray_ok.jpg"><img alt="../_images/ray_ok.jpg" class="align-center" src="ray_ok.jpg" style="width: 60%;" /></a>
+<p>Q5.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="buy.html" class="btn btn-neutral" title="购买" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, autolife
+
+    </p>
+  </div>
+
+ 
+2008-2018
+
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-130484046-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+<script async src="http://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="underscore.js"></script>
+        <script type="text/javascript" src="doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
